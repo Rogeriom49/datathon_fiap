@@ -27,7 +27,7 @@ def barChart(dataframe, x, y, title, xaxis_title, yaxis_title):
     return fig
 
 def scatterChart(dataframe, x, y, title, xaxis_title, yaxis_title, color=None):
-    fig = px.scatter(dataframe, x=x, y=y, title=title, color=color)
+    fig = px.scatter(dataframe, x=x, y=y, title=title, color=color, trendline="ols", trendline_scope="overall", trendline_color_override="white", height=700)
 
     fig.update_layout(
         xaxis_title=xaxis_title,

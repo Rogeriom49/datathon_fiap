@@ -57,5 +57,5 @@ with tab2:
     if(cbAno_grafico != 'Todos'):
         df_ano_grafico = globals.df[globals.df['ANO'] == globals.lAno[cbAno_grafico]]       
 
-    st.plotly_chart(graficos.scatterChart(df_ano_grafico, 'INDE', cbIndicador, 'Relação de Crescimento do INDE', 'INDE', cbIndicador, color='PEDRA'))
+    st.plotly_chart(graficos.scatterChart(df_ano_grafico, 'INDE', cbIndicador, 'Relação de Crescimento do INDE', 'INDE', cbIndicador, color='PEDRA'), use_container_width=True)
     
