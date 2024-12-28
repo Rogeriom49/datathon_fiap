@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import globals
 import utilidades
 
 st.header('**Modelo de Machine Learning**')
