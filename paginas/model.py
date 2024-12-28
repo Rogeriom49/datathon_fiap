@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 import joblib
-import requests
 import globals
 import utilidades
 
@@ -33,7 +31,7 @@ with tab1:
         with col4:
             ida = st.number_input('IDA', min_value=0, max_value=10, value=5)
 
-        co5,col6,col7 = st.columns([1,1,1], border=False)
+        co5,col6,col7 = st.columns([1,1,1], border=False, vertical_alignment='center')
 
         with col6:
             submit = st.form_submit_button('Realizar previsão', type='primary', use_container_width=True, help='Clique para realizar a previsão de performance do aluno')
