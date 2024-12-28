@@ -9,7 +9,7 @@ st.header('**Modelo de Machine Learning**')
 
 st.markdown(""" Preencha os campos abaixo para realizar a previsão""")
 
-modelo = joblib.load('best_model_random_forest.pkl')
+modelo = joblib.load('best_model_support_vector_machine.pkl')
 
 tab1, tab2 = st.tabs(['Previsões', 'Relatório'])
 
