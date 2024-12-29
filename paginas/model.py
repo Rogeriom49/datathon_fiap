@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import utilidades
+import globals
 
 st.header('**Modelo de Machine Learning**')
 
@@ -40,6 +41,18 @@ with tab1:
             data = pd.DataFrame([dados])
             resultado = utilidades.forecast_performance(data, modelo)
             if resultado == 0:
-                st.write('**Aluno com baixa performance**')
+                st.subheader('**Aluno com baixa performance**')
             else:
-                st.write('**Aluno com alta performance**')
+                st.subheader('**Aluno com alta performance**')
+
+with tab2:
+    st.write('**Relatório de performance**')
+    st.write(""" Para determinar o modelo mais eficiente na previsão do desempenho escolar dos alunos, foi realizada uma análise comparativa envolvendo diversos algoritmos de aprendizado de máquina. Esses modelos foram treinados utilizando as informações fornecidas no dataset, abrangendo variáveis relacionadas ao desempenho escolar. Após o treinamento, os resultados de cada modelo foram avaliados e organizados em um dataframe estruturado. Esse dataframe contém informações detalhadas, incluindo o nome do modelo, os valores obtidos na validação cruzada, bem como as métricas de desempenho mais relevantes: F1 Score, Acurácia, Precision e Recall. Essas métricas foram escolhidas para garantir uma avaliação abrangente, especialmente considerando o equilíbrio entre precisão e sensibilidade nos casos de desbalanceamento de classes. """) 
+
+    st.write(""" Com base na análise das métricas de desempenho, deu-se ênfase ao F1 Score como critério principal de avaliação devido ao desbalanceamento observado no dataset original. Essa escolha foi feita porque o F1 Score equilibra a precisão (precision) e a sensibilidade (recall), sendo ideal para cenários em que há classes desproporcionais. Após a comparação dos resultados entre os modelos testados, o Support Vector Machine (SVM) foi identificado como o mais adequado para resolver o problema proposto, apresentando o melhor desempenho em termos de F1 Score. """)
+
+    st.dataframe(globals.df_model_report.style.highlight_max(axis=0, color='green'), use_container_width=True)    
+
+    st.write("Os resultados obtidos com o modelo Support Vector Machine (SVM) são apresentados na tabela acima. O SVM obteve o melhor desempenho em termos de F1 Score, Acurácia, Precision e Recall, superando os demais modelos avaliados. Esses resultados reforçam a eficácia do SVM na previsão do desempenho escolar dos alunos, destacando sua capacidade de lidar com classes desbalanceadas e fornecer previsões precisas e confiáveis. Portanto, o SVM foi selecionado como o modelo final para a realização das previsões de desempenho dos alunos neste projeto.")   
+
+    st.write("""Os testes e validações podem ser encontrados clicando [aqui](https://github.com/Rogeriom49/datathon_fiap/blob/main/notebooks/model_training.ipynb) """)          

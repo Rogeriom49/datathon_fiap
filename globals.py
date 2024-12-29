@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('https://raw.githubusercontent.com/Rogeriom49/datathon_fiap/refs/heads/main/datasets/alunos_2.csv')
 
-df_model_report = pd.read_csv('https://raw.githubusercontent.com/Rogeriom49/datathon_fiap/refs/heads/main/datasets/model_resport.csv')
+df_model_report = pd.read_csv('https://raw.githubusercontent.com/Rogeriom49/datathon_fiap/refs/heads/main/datasets/model_resport.csv', sep=';')
 
 sUrl =  'https://raw.githubusercontent.com/Rogeriom49/datathon_fiap/refs/heads/main/best_model_random_forest.pkl'
 
