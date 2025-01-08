@@ -22,7 +22,7 @@ pages = [
 ]
 
 with st.sidebar:
-    st.subheader('Integrantes',divider='gray')
+    st.subheader('Integrantes')
     st.markdown(""" RM353394 - Gabriel da Silva Sousa """)
     st.markdown(""" RM353861 - Rogério Paulo Marcon Júnior """)
     st.markdown(""" RM354166 - Thaís Rpdrigues Gasparetto """)
@@ -32,7 +32,7 @@ with st.sidebar:
 
     st.subheader("Instalando as dependências do app localmente")
     st.code(body="python -m venv venv", language="shell")
-    st.code(body="source venv/Scripts/activate", language="shell")
+    st.code(body="python venv/Scripts/activate", language="shell")
     st.code(body="pip install -r requirements.txt", language="shell")
 
     st.divider()
@@ -44,7 +44,7 @@ with st.sidebar:
 
     st.subheader("Repositórios do projeto")
     st.markdown(f""" <div>
-                        <a href="{globals.pd}" target="_blank"><img src="assets/images/github.png" width="30"/></a>     
+                        <a href="{globals.repo_url}" target="_blank"><img src="assets/images/github.png" width="30"/></a>     
                      </div> """, unsafe_allow_html=True)
 
 pg = st.navigation(pages)
