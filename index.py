@@ -44,7 +44,7 @@ with st.sidebar:
 
     st.subheader("Repositórios do projeto")
     st.markdown(f""" <div>
-                        <a href="{globals.repo_url}" target="_blank"><img src="assets/images/github.png" width="30"/></a>     
+                        <a href="{globals.repo_url}" target="_blank"><img src="https://github.com/Rogeriom49/datathon_fiap/blob/main/assets/images/github.png?raw=true" width="30"/></a>     
                      </div> """, unsafe_allow_html=True)
 
 pg = st.navigation(pages)
