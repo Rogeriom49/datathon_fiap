@@ -11,3 +11,5 @@ lAno = {'Todos': 'Todos','2020': 2020, '2021': 2021, '2022':2022}
 lIndicadores_1 = ['INDE', 'IAA', 'IEG','IPS','IDA', 'IPP', 'IPV','IAN']
 
 lPedras = ['Topázio', 'Ametista', 'Ágata', 'Quartzo']
+
+repo_url = 'https://github.com/Rogeriom49/datathon_fiap'
