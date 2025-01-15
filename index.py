@@ -18,6 +18,7 @@ pages = [
         st.Page(page="paginas/analysis.py", title="Análise", default=False),
         st.Page(page="paginas/model.py", title="Modelo", default=False),
         st.Page(page="paginas/technologies.py", title="Técnologias", default=False),
+        st.Page(page="paginas/dashboard.py", title="Dashboard", default=False),
         st.Page(page="paginas/conclusao.py", title="Conclusão", default=False),  
 ]
 
@@ -47,7 +48,7 @@ with st.sidebar:
                         <a href="{globals.repo_url}" target="_blank"><img src="https://github.com/Rogeriom49/datathon_fiap/blob/main/assets/images/github.png?raw=true" width="30"/></a>     
                      </div> """, unsafe_allow_html=True)
 
-pg = st.navigation(pages)
+pg = st.navigation(pages, expanded=False)
 
 pg.run()
 
