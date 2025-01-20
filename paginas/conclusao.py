@@ -17,5 +17,6 @@ st.write(""" Em resumo, o modelo de previsão de risco oferece vantagens signifi
 st.divider()
 
 st.subheader("**Links Relevantes**")
+st.write(""" - [Passos Mágicos](https://passosmagicos.org.br)""")
 st.write(""" - [Repositório no GitHub](https://github.com/Rogeriom49/datathon_fiap)""")
-st.write(""" - [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGFmNDAzNTEtMWZkYS00NGFiLWEyN2YtMmRkZjIwNjUyZTA2IiwidCI6IjZkYzg3NGNlLWRkMmItNGFhOS05ZjBkLWFkYjkyNjlhNzU4MCJ9 )""")
+st.write(""" - [Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGFmNDAzNTEtMWZkYS00NGFiLWEyN2YtMmRkZjIwNjUyZTA2IiwidCI6IjZkYzg3NGNlLWRkMmItNGFhOS05ZjBkLWFkYjkyNjlhNzU4MCJ9)""")

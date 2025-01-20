@@ -9,7 +9,7 @@ col1, col2,col3, col4 = st.columns(4, gap='small', vertical_alignment='center', 
 
 with col2:
     st.image('assets/images/fiap.png', width=160, clamp=True)
-
+    
 with col3:
     st.image('assets/images/passos.png', width=200, clamp=True)
 
