@@ -25,23 +25,31 @@ with tab1:
     st.divider()
     st.subheader('**Impacto (indicadores 2023)**')
     st.write(""" Pessoas Impactadas: **4400** (considerando a média de 4 familiares por aluno) """)
-    st.write(""" Alunos no programa de Aceleração do Conhecimento: **1100 alunos** """)
-    st.write(""" - 20% na alfabetização """)
-    st.write(""" - 37% nas turmas 1 e 2 """)
-    st.write(""" - 24% nas turmas 3 e 4 """)
-    st.write(""" - 8% nas turmas 5 e 6 """)
-    st.write(""" - 11% nas turmas 7 e 8 """)
-    st.write(""" Bolsistas em instituições de ensino particular: **98 alunos** """)
-    st.write(""" - Colégio Evolução Arco Íris: 75 alunos """)
-    st.write(""" - Albert Einstein: 8 alunos """)
-    st.write(""" - Escola João Paulo II: 1 aluno """)
-    st.write(""" - Colégio Poliedro: 2 alunos """)
-    st.write(""" - FIAP: 12 alunos """)
-    st.write(""" Universitários em instituições de ensino superior: **103 alunos** """)
-    st.write(""" - ESPM: 4 alunos """)
-    st.write(""" - Estácio: 5 alunos """)
-    st.write(""" - FIAP: 46 alunos """)
-    st.write(""" - UNISA: 39 alunos """)
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.write(""" Alunos no programa de Aceleração do Conhecimento: **1100 alunos** """)
+        st.write(""" - 20% na alfabetização """)
+        st.write(""" - 37% nas turmas 1 e 2 """)
+        st.write(""" - 24% nas turmas 3 e 4 """)
+        st.write(""" - 8% nas turmas 5 e 6 """)
+        st.write(""" - 11% nas turmas 7 e 8 """)
+
+    with col2:
+        st.write(""" Bolsistas em instituições de ensino particular: **98 alunos** """)
+        st.write(""" - Colégio Evolução Arco Íris: 75 alunos """)
+        st.write(""" - Albert Einstein: 8 alunos """)
+        st.write(""" - Escola João Paulo II: 1 aluno """)
+        st.write(""" - Colégio Poliedro: 2 alunos """)
+        st.write(""" - FIAP: 12 alunos """)
+    
+    with col3:
+        st.write(""" Universitários em instituições de ensino superior: **103 alunos** """)
+        st.write(""" - ESPM: 4 alunos """)
+        st.write(""" - Estácio: 5 alunos """)
+        st.write(""" - FIAP: 46 alunos """)
+        st.write(""" - UNISA: 39 alunos """)
 
 with tab2:
     st.write(""" O objetivo do projeto é criar uma solução preditiva para monitorar o desempenho escolar dos alunos, identificando aqueles com resultados acima ou abaixo do esperado. A avaliação será baseada em indicadores como Desempenho Acadêmico, Psicopedagógico, Engajamento, Autoavaliação, Adequação de Nível e Ponto da Virada. Para isso, será empregado o modelo de machine learning que apresentou o melhor desempenho segundo as métricas de F1 Score, Acurácia, Precisão e Recall. """)
