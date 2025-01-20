@@ -26,7 +26,7 @@ with st.sidebar:
     st.subheader('Integrantes')
     st.markdown(""" RM353394 - Gabriel da Silva Sousa """)
     st.markdown(""" RM353861 - Rogério Paulo Marcon Júnior """)
-    st.markdown(""" RM354166 - Thaís Rpdrigues Gasparetto """)
+    st.markdown(""" RM354166 - Thaís Rodrigues Gasparetto """)
     st.markdown(""" RM353227 - Vinicius dos Santos Aquino""")
 
     st.divider()
