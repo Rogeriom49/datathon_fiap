@@ -58,4 +58,6 @@ with tab2:
         df_ano_grafico = globals.df[globals.df['ANO'] == globals.lAno[cbAno_grafico]]       
 
     st.plotly_chart(graficos.scatterChart(df_ano_grafico, 'INDE', cbIndicador, 'Relação de Crescimento do INDE', 'INDE', cbIndicador, color='PEDRA'), use_container_width=True)
+
+    st.expander(' :bulb: Considerações', expanded=False).markdown("""O gráfico de dispersão ilustra como as outras notas variam em relação ao índice INDE, permitindo uma análise visual dessa relação. Além disso, o gráfico inclui uma linha de tendência, que facilita a identificação de um padrão: se o comportamento das notas em relação ao INDE apresenta uma tendência de crescimento ou declínio""")
     

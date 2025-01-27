@@ -45,6 +45,8 @@ with tab1:
             else:
                 st.subheader('**Aluno com alta performance**')
 
+        st.expander(':bulb: Considerações', expanded=False).write(""" Este modelo foi desenvolvido para avaliar o desempenho dos alunos, utilizando como base suas notas e um sistema de classificação chamado "pedras". Entre as categorias de pedras, destaca-se a "Quartzo", que representa alunos com baixo desempenho. Com isso, ao inserir as notas no modelo, ele pode prever se o aluno em questão tem risco de apresentar uma performance insatisfatória. Essa previsão permite que os responsáveis tomem medidas proativas, oferecendo o suporte necessário para melhorar o desempenho do aluno. """)
+
 with tab2:
     st.write('**Relatório de performance**')
     st.write(""" Para determinar o modelo mais eficiente na previsão do desempenho escolar dos alunos, foi realizada uma análise comparativa envolvendo diversos algoritmos de aprendizado de máquina. Esses modelos foram treinados utilizando as informações fornecidas no dataset, abrangendo variáveis relacionadas ao desempenho escolar. Após o treinamento, os resultados de cada modelo foram avaliados e organizados em um dataframe estruturado. Esse dataframe contém informações detalhadas, incluindo o nome do modelo, os valores obtidos na validação cruzada, bem como as métricas de desempenho mais relevantes: F1 Score, Acurácia, Precision e Recall. Essas métricas foram escolhidas para garantir uma avaliação abrangente, especialmente considerando o equilíbrio entre precisão e sensibilidade nos casos de desbalanceamento de classes. """) 
